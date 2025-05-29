@@ -1,0 +1,103 @@
+.fighterMenu {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.fighterInMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    height: 250px;
+    gap: 20%;
+    background-color: #4b4b4b33;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fighterInMenu:hover {
+    background-color: #5f5f5f38;
+}
+
+.fighterPhoto {
+    height: 55%;
+    object-fit: contain;    
+}
+
+.fighterInMenuInfo {
+    width: 40%;
+}
+
+.fighterInMenuInfo>.fighterName {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.fighterInMenuInfo>.fighterNickname {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #a0a0a0;
+}
+
+.fighterInMenuInfo>p {
+    padding-left: 10px;
+    color: rgb(201, 10, 10);
+    line-height: 1.1rem;
+}
+
+#pagination {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#pagination button {
+    background-color: #4b4b4b33;
+    margin: 0 4px;
+    padding: 8px 14px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 40px;
+}
+
+@media (max-width: 1300px) {
+    .fighterMenu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .fighterMenu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 430px) {
+    .fighterInMenu {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 0%;
+    }
+
+    .fighterPhoto {
+        width: 50%;
+    }
+
+    .fighterInMenuInfo {
+        text-align: center;
+        width: 100%;
+    }
+}

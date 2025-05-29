@@ -2,112 +2,251 @@
 <html lang="cs">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OTIS FIGHT NIGHT – Už brzy!</title>
-  
-  <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="icon" type="image/png" href="OFN_ICON.png" sizes="96x96">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/b2482ebdcd.js" crossorigin="anonymous"></script>
+    <title>Otis Fight Night | Hlavní stránka</title>
 
-  <style>
-    body {
-      font-family: "Plus Jakarta Sans", arial, sans-serif;
-      background-image: linear-gradient(to right top, #360000, #200007, #11001b, #1b0013, #080011, #250000, #310000);
-      color: white;
-      height: auto;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+    <link rel="icon" type="image/png" href="/images/OFN_ICON.png" sizes="96x96">
+    </p>
 
-    .container {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 40px 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
-      max-width: 500px;
-      width: 100%;
-      margin: 30px;
-
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #ff7676;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .menuLink {
-      display: flex;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.07);
-      padding: 14px 20px;
-      border-radius: 12px;
-      margin: 8px 0;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: all 0.3s;
-      justify-content: space-between;
-    }
-
-    .menuLink:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-      color: #a80000;
-    }
-
-    .menuLink i {
-      font-size: 1.2rem;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.85rem;
-      color: #aaa;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.4rem;
-      }
-      .container{
-        width: 70%;
-      }
-      p, footer{
-        font-size: 0.8rem;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fightcard.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>🚧 Web se připravuje! 🚧</h1>
-    <p>Otis Fight Night stránka je na cestě. Sleduj nás a nepropásni spuštění!</p>
-    <br>
-    <h1>Sledujte nás na:</h1>
-    <a href="https://www.instagram.com/otisfightnight/" target="_blank" class="menuLink">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <a href="https://www.tiktok.com/@otisfightnight" target="_blank" class="menuLink">
-      <i class="fab fa-tiktok"></i> TikTok
-    </a>
-    <a href="https://www.youtube.com/@OtisFightNight" target="_blank" class="menuLink">
-      <i class="fab fa-youtube"></i> YouTube
-    </a>
-    <footer>2025 &copy; Otis Fight Night sro. Všechna práva vyhrazena.</footer>
-  </div>
+
+    <header>
+        <a href="index.html" class="headerLogo"></a>
+        <nav class="options">
+            <section class="burgerMenu">
+                <i class="fa-solid fa-bars"></i>
+                <article id="menuLinks">
+                    <p>Otis Fight Night</p>
+                    <a href="cs/explore.html" class="menuLink"><i class="fa-solid fa-magnifying-glass"></i>Procházet</a>
+                    <a href="cs/fighters.html" class="menuLink"><i class="fa-solid fa-hand-fist"></i>Fighteři</a>
+                    <a href="cs/contact.html" class="menuLink"><i class="fa-solid fa-phone"></i>Kontakt</a>
+                    <a href="cs/news.html" class="menuLink"><i class="fa-solid fa-envelope"></i>Zprávy</a>
+                    <a href="cs/about.html" class="menuLink"><i class="fa-solid fa-address-card"></i>O nás</a>
+                    <a href="cs/career.html" class="menuLink"><i class="fa-solid fa-user-check"></i>Kariéra</a>
+                    <a href="cs/faq.html" class="menuLink"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+                    <p>Sledujte nás na:</p>
+                    <a href="https://www.instagram.com/otisfightnight/" target="_blank" class="menuLink"><i
+                            class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a href="https://www.tiktok.com/@otisfightnight" target="_blank" class="menuLink"><i
+                            class="fa-brands fa-tiktok"></i>TikTok</a>
+                    <a href="https://www.youtube.com/@OtisFightNight" target="_blank" class="menuLink"><i
+                            class="fa-brands fa-youtube"></i>YouTube</a>
+                </article>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="nextEvent">
+            <section class="upcommingEventLogo"></section>
+            <a href="https://www.google.com/maps/place/D%C3%A1msk%C3%BD+h%C3%A1zenk%C3%A1%C5%99sk%C3%BD+klub+Zora/@49.5992401,17.2454121,16.89z/data=!4m15!1m7!3m6!1s0x47124ef178107871:0x2fc8642499d5fd6a!2zRMOhbXNrw70gaMOhemVua8OhxZlza8O9IGtsdWIgWm9yYQ!8m2!3d49.5990715!4d17.2477797!16s%2Fg%2F1tf7qw2z!3m6!1s0x47124ef178107871:0x2fc8642499d5fd6a!8m2!3d49.5990715!4d17.2477797!15sCghkaGsgem9yYVoKIghkaGsgem9yYZIBC3Nwb3J0c19jbHVimgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU15ZWtwaVdUSm5SUkFCqgEwEAEyHhABIhq2hEYDMlh1cl_CDoA58IRpdte3N3guvAIpnDIMEAIiCGRoayB6b3Jh4AEA-gEECAAQMQ!16s%2Fg%2F1tf7qw2z?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D"
+                class="buyTickets">Vstupenky v prodeji na místě!</a>
+            <article class="time">
+                <section class="timeSet">
+                    <p id="days"></p>
+                    <p class="timeCount"></p>
+                </section>
+                <section class="timeSet">
+                    <p id="hours"></p>
+                    <p class="timeCount"></p>
+                </section>
+                <section class="timeSet">
+                    <p id="minutes"></p>
+                    <p class="timeCount"></p>
+                </section>
+                <section class="timeSet">
+                    <p id="seconds"></p>
+                    <p class="timeCount"></p>
+                </section>
+            </article>
+            <section id="eventDate">26.7.2025 - 19:00</section>
+            <a href="https://www.dhkolomouc.cz/" target="_blank" id="place">
+                <section class="placeLogo"></section>
+                <p>DHK Zora Olomouc</p>
+            </a>
+        </section>
+        <div class="separateSections"></div>
+        <section class="previousEvents">
+            <p>Sledujte také</p>
+            <section class="eventsScrollBar">
+                <a href="https://www.youtube.com/watch?v=q88pzw7L7BU">
+                    <article class="oneEvent" style="background-image: url(images/OFN_4_SCREENSHOT.png);">
+                        <section class="lowerOpacityBottom">
+                            <img src="images/OFN_4_Full.png" class="ofnNumber"></img>
+                            <p>25.4.2025</p>
+                        </section>
+                    </article>
+                </a>
+                <a href="https://www.youtube.com/watch?v=7lIGCHp3430&t=718s">
+                    <article class="oneEvent" style="background-image: url(images/OFN_3_SCREENSHOT.png);">
+                        <section class="lowerOpacityBottom">
+                            <img src="images/OFN_3_Full.png" class="ofnNumber"></img>
+                            <p>10.1.2025</p>
+                        </section>
+                    </article>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=FWDg2ligdLY&t=332s">
+                    <article class="oneEvent" style="background-image: url(images/OFN_2_SCREENSHOT.png);">
+                        <section class="lowerOpacityBottom">
+                            <img src="images/OFN_2_Full.png" class="ofnNumber"></img>
+                            <p>1.11.2024</p>
+                        </section>
+                    </article>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Z7uasRD2vYM&t=319s">
+                    <article class="oneEvent" style="background-image: url(images/OFN_1_SCREENSHOT.png);">
+                        <section class="lowerOpacityBottom">
+                            <img src="images/OFN_1_Full.png" class="ofnNumber"></img>
+                            <p>22.9.2024</p>
+                        </section>
+                    </article>
+                </a>
+
+            </section>
+        </section>
+
+        <div class="separateSections"></div>
+
+        <section class="fightCard">
+            <p class="description">Fight Card</p>
+            <p class="fightStyle">MMA do 77kg</p>
+            <section class="fightDuo">
+                <a href="cs/fighters/pablo69.html" class="fighterLeft">
+                    <img src="images/pablo69.png" class="fighterPhoto">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Lukáš Fiala</p>
+                        <p class="fighterNickname">PABLO69</p>
+                    </article>
+                </a>
+
+                <section class="vsSymbol">VS</section>
+
+                <a href="cs/fighters/usak.html" class="fighterRight">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Marek Čureja</p>
+                        <p class="fighterNickname">UŠÁK</p>
+                    </article>
+                    <img src="images/usak.png" class="fighterPhoto">
+                </a>
+            </section>
+
+            <p class="fightStyle">BOX do 69kg</p>
+            <section class="fightDuo">
+                <a href="cs/fighters/brodic.html" class="fighterLeft">
+                    <img src="images/brodic.png" class="fighterPhoto">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Lukáš Broda</p>
+                        <p class="fighterNickname">BRODIČ</p>
+                    </article>
+                </a>
+
+                <section class="vsSymbol">VS</section>
+
+                <a href="cs/fighters/sanchi.html" class="fighterRight">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Štěpán Casas Sanchez</p>
+                        <p class="fighterNickname">SANCHI</p>
+                    </article>
+                    <img src="images/sanchi.png" class="fighterPhoto">
+                </a>
+            </section>
+
+            <p class="fightStyle">BOX do 61kg</p>
+            <section class="fightDuo">
+                <a href="cs/fighters/striker.html" class="fighterLeft">
+                    <img src="images/striker.png" class="fighterPhoto">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Adam Štreit</p>
+                        <p class="fighterNickname">STRIKER</p>
+                    </article>
+                </a>
+
+                <section class="vsSymbol">VS</section>
+
+                <a href="cs/fighters/bengoro.html" class="fighterRight">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Jiří Lanž</p>
+                        <p class="fighterNickname">BENGORO</p>
+                    </article>
+                    <img src="images/bengoro.png" class="fighterPhoto">
+                </a>
+            </section>
+        </section>
+
+        <div class="separateSections"></div>
+
+        <p class="description">Místo dalšího galavečera:</p>
+        <div class="mapEvent map"></div>
+
+        <div class="separateSections"></div>
+
+        <article class="sponsors">
+            <a href="" class="sponsor" target="_blank" style="background-image: url('images/');"></a>
+        </article>
+
+    </main>
+    <footer>
+        <article class="footer">
+            <section class="footerSection">
+                <p class="footerTitle">Otis Fight Night s.r.o</p>
+                <a href="https://www.tiktok.com/@otisfightnight" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/otisfightnight/" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/@OtisFightNight" target="_blank">YouTube</a>
+            </section>
+
+            <section class="footerSection">
+                <p class="footerTitle">Kontakt</p>
+                <p>Email: </p>
+                <p>otisfightnight@gmail.com</p>
+                <p>Telefon:</p>
+                <p>+420 725 932 193</p>
+            </section>
+
+            <section class="footerSection">
+                <p class="footerTitle">Informace</p>
+                <ul>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="career.html">Kariéra</a></li>
+                    <li><a href="about.html">O nás</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </section>
+
+            <section class="footerSection">
+                <p class="footerTitle">Adresa</p>
+                <p>Jakoubka ze Stříbra 781/44</p>
+                <p>Nové Sady</p>
+                <p>779 00</p>
+                <p>Olomouc</p>
+                <p>IČO: 230 20 008</p>
+            </section>
+        </article>
+
+        <span class="footerBottom">
+            <p>2025 &copy; Otis Fight Night sro. Všechna práva vyhrazena.</p>
+        </span>
+    </footer>
+
+    <script src="js/countdown.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/map.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevg2WRT--AqPolwzDspATeIqV1YJifvw&callback=initMapEvent">
+        </script>
 </body>
 
 </html>

@@ -1,0 +1,111 @@
+.careerMenu {
+    width: 70%;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    background-color: #4b4b4b33;
+    border-radius: 10px;
+    margin: 30px;
+    border: rgb(97, 25, 25) 1px solid;
+}
+
+.interestedCareer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.interestedCareer>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+}
+
+.interestedCareer>a:hover {
+    background-color: #0303034d;
+}
+
+.job {
+    display: flex;
+    background-color: #3333335d;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s;
+    cursor: default;
+    border: 1px #3333335d solid;
+}
+
+.job:hover {
+    border: 1px brown solid;
+    background-color: #5050505d;
+}
+
+.jobTitle {
+    font-size: 1.4rem;
+    margin-bottom: 200px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #920202;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 1400px) {
+    .jobs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .careerMenu {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .jobs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .careerMenu {
+        width: 90%;
+    }
+
+    .interestedCareer>a {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .careerMenu {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .job {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .jobTitle {
+        font-size: 1.2rem;
+        margin-bottom: 200px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #920202;
+    }
+}
