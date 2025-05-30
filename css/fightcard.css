@@ -1,0 +1,185 @@
+.fightCard {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fightDuo {
+    width: 65%;
+    justify-content: space-between;
+    display: flex;
+    height: 150px;
+}
+
+.fighterRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.3s;
+    margin-left: 40px;
+}
+
+.fighterLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.3s;
+    margin-right: 40px;
+}
+
+.fighterLeft:hover,
+.fighterRight:hover {
+    background-color: #6b6b6b2a;
+    cursor: pointer;
+}
+
+.fighterLeft>.fighterInFightcardInfo {
+    text-align: end;
+}
+
+.fighterRight>.fighterInFightcardInfo {
+    text-align: start;
+}
+
+.fighterInFightcardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    height: 100%;
+}
+
+.fighterPhoto {
+    height: 70%;
+    object-fit: contain
+}
+
+.fighterInFightcardInfo>.fighterName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.fighterInFightcardInfo>.fighterNickname {
+    padding: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: rgb(155, 11, 11);
+    font-size: 1.2rem;
+}
+
+.vsSymbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(155, 11, 11);
+}
+
+.fightStyle {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    color: rgb(173, 173, 173);
+}
+
+.fighterInMenuInfo>.fighterName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.fighterInMenuInfo>.fighterNickname {
+    padding: 10px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #a0a0a0;
+}
+
+@media (max-width: 1100px) {
+    .fightDuo {
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+    }
+
+    .fighterLeft,
+    .fighterRight {
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .fighterPhoto {
+        order: 1;
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+    }
+
+    .fighterInFightcardInfo {
+        order: 2;
+        width: 100%;
+        padding-top: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fighterLeft>.fighterInFightcardInfo,
+    .fighterRight>.fighterInFightcardInfo {
+        text-align: center;
+    }
+
+    .fighterInFightcardInfo>.fighterName {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .fighterInFightcardInfo>.fighterNickname {
+        font-size: 1rem;
+        padding: 5px;
+        color: rgb(155, 11, 11);
+    }
+
+    .vsSymbol {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .vsSymbol {
+        font-size: 2rem;
+    }
+
+    .fighterInFightcardInfo>.fighterName {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .fighterInFightcardInfo>.fighterNickname {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
