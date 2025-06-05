@@ -49,6 +49,14 @@
     line-height: 1.7rem;
 }
 
+.fighterStatusActive {
+    color: rgb(132, 170, 132);
+}
+
+.fighterStatusNonActive {
+    color: rgb(185, 94, 94);
+}
+
 .separateSectionsVertical {
     height: 80%;
     width: 2px;
@@ -97,7 +105,7 @@ table {
     background-color: rgba(126, 126, 126, 0.144);
 }
 
-.fighterStats{
+.fighterStats {
     display: flex;
     flex-direction: column;
     align-items: center;

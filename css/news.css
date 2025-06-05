@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    min-width: 200px;
+    min-width: 100px;
     margin-right: 20px;
 }
 
@@ -85,7 +85,7 @@
         margin: 0 0 15px 0;
         width: 100%;
         height: auto;
-        max-height: 180px;
+        max-height: 60%;
     }
 
     .messageInfo {

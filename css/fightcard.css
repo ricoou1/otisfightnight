@@ -7,13 +7,14 @@
 }
 
 .fightDuo {
-    width: 65%;
+    width: 80%;
     justify-content: space-between;
     display: flex;
     height: 150px;
 }
 
 .fighterRight {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +27,7 @@
 }
 
 .fighterLeft {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,6 +82,7 @@
 }
 
 .vsSymbol {
+    flex: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,6 +116,7 @@
         justify-content: center;
         height: auto;
         gap: 10px;
+        width: 100%;
     }
 
     .fighterLeft,
@@ -167,7 +171,6 @@
 }
 
 
-
 @media (max-width: 768px) {
     .vsSymbol {
         font-size: 2rem;
@@ -181,5 +184,9 @@
     .fighterInFightcardInfo>.fighterNickname {
         font-size: 1rem;
         padding: 5px;
+    }
+
+    .fighterPhoto {
+        max-width: 80px;
     }
 }

@@ -1,0 +1,49 @@
+.notFoundCode {
+    font-size: 10rem;
+    line-height: 1;
+    color: #c62828;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(198, 40, 40, 0.5);
+    font-size: clamp(8rem, 4rem + 6vw, 10rem);
+}
+
+.notFoundTitle {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 3rem 0 1rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.notFoundDescription {
+    font-size: 1.3rem;
+    color: rgb(180, 0, 0);
+    margin: 10px 0 20px 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.backLink {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 15px 25px;
+    background-color: black;
+    color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 0 15px 5px rgba(117, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.backLink:hover {
+    box-shadow: 0 0 25px 10px rgba(114, 0, 0, 0.7);
+}
+
+main {
+    margin-bottom: 8vh;
+}

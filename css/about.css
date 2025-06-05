@@ -14,8 +14,7 @@
 }
 
 .aboutMenu:hover {
-    scale: 1.01;
-    box-shadow: 0 0 20px 10px rgb(80, 7, 7);
+    box-shadow: 0 0 10px 1px rgb(80, 7, 7);
 }
 
 .teamMember {
@@ -23,6 +22,39 @@
     color: rgb(255, 83, 83);
     margin-bottom: 10px;
     font-weight: 600;
+}
+
+.sectionTitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(255, 83, 83);
+    margin-bottom: 20px;
+}
+
+.aboutLinks {
+    display: flex;
+    gap: 12px;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.aboutLinks a {
+    display: block;
+    text-decoration: none;
+    background-color: #3333335d;
+    border: 1px #3333335d solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    padding: 12px 18px;
+    color: #f0f0f0;
+    width: 50%;
+}
+
+.aboutLinks:hover a:hover {
+    border: 1px brown solid;
+    background-color: #5050505d;
 }
 
 @media (max-width: 768px) {
@@ -38,5 +70,13 @@
         width: 100%;
         padding: 20px;
         margin: 10px;
+    }
+
+    .aboutLinks {
+        flex-direction: column;
+    }
+
+    .aboutLinks a {
+        width: 90%;
     }
 }

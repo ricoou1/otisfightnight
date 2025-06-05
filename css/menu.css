@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: safe;
     position: absolute;
-    background-color: rgba(126, 126, 126, 0.144);
+    background-color: rgba(36, 36, 36, 0.5);
     border-radius: 10px;
     min-width: 300px;
     padding-bottom: 30px;
@@ -13,9 +13,9 @@
     transition: all 0.3s ease-in-out;
     position: fixed;
     right: 40px;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 90vh;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     opacity: 0;
 }
 
@@ -78,10 +78,15 @@
     width: 70%;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 500px) {
     #menuLinks {
-        right: 20px;
+        right: 0px;
+        top: 0px;
         min-width: 250px;
+        width: 100%;
+        max-height: 100vh;
+        height: 100vh;
+        position: fixed;
+        border-radius: 0;
     }
-    
 }
