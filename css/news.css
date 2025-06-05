@@ -1,0 +1,117 @@
+.messages {
+    width: 80%;
+    margin: 20px auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.messages>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+    min-height: 250px;
+    background-color: rgba(75, 75, 75, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.messages>a:hover {
+    background-color: rgba(119, 119, 119, 0.28);
+}
+
+.messagePhoto {
+    height: 200px;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.messageInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 100px;
+    margin-right: 20px;
+}
+
+.messageInfo>.messageTitle {
+    font-size: clamp(1.2rem, 1vw + 1rem, 1.6rem);
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.messageInfo>p {
+    line-height: 1.5rem;
+    color: #c2c2c2;
+    overflow: hidden;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    color: #c2c2c2;
+}
+
+.messageDateAuthor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 120px;
+    text-align: right;
+    gap: 10px;
+    color: #8f8f8f;
+}
+
+.messageDateAuthor>p {
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .messages>a {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .messagePhoto {
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: auto;
+        max-height: 60%;
+    }
+
+    .messageInfo {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .messageDateAuthor {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .messageInfo>.messageTitle {
+        font-size: 1.2rem;
+    }
+
+    .messageInfo>p {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+
+    .messageDateAuthor>p {
+        font-size: 0.85rem;
+    }
+}

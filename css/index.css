@@ -1,0 +1,212 @@
+.nextEvent {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.upcommingEventLogo {
+    width: 500px;
+    height: 300px;
+    background-image: url(../images/OFN_5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buyTickets {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 20px;
+    background-color: black;
+    border-radius: 14px;
+    box-shadow: 0 0 10px 10px rgb(70, 0, 0);
+    transition: all 0.3s;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.buyTickets:hover {
+    scale: 1.1;
+    box-shadow: 0 0 20px 20px rgb(70, 0, 0);
+}
+
+#eventDate {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(179, 179, 179);
+}
+
+#place {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: end;
+    transition: all 0.3s;
+}
+
+#place>p {
+    line-height: 2rem;
+}
+
+#place:hover {
+    scale: 0.98;
+}
+
+#place>p {
+    font-size: 2rem;
+}
+
+.placeLogo {
+    background-image: url(../images/dhkzora.png);
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.previousEvents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.previousEvents>p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.eventsScrollBar {
+    width: 70%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.oneEvent {
+    width: 400px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: end;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    aspect-ratio: 3 / 2;
+    border-radius: 8px;
+    transition: all 0.7s;
+}
+
+.oneEvent:hover {
+    background-size: 120%;
+}
+
+.lowerOpacityBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.description {
+    line-height: 2rem;
+}
+
+.lowerOpacityBottom>p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.ofnNumber {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+}
+
+
+@media (max-width: 1400px) {
+    .upcommingEventLogo {
+        width: 400px;
+        height: 220px;
+    }
+
+    .oneEvent {
+        width: 300px;
+    }
+
+    #place {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    #place>p {
+        font-size: 1.5rem;
+    }
+
+    .placeLogo {
+        width: 170px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    #eventDate {
+        font-size: 1rem;
+    }
+
+    .upcommingEventLogo {
+        width: 350px;
+        height: 230px;
+    }
+
+    .oneEvent {
+        width: 200px;
+    }
+
+    .lowerOpacityBottom>p {
+        font-size: 1rem;
+    }
+
+    .placeLogo {
+        width: 150px;
+    }
+
+    #place {
+        width: 200px;
+    }
+
+    #place>p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .buyTickets {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .upcommingEventLogo {
+        width: 300px;
+        height: 220px;
+    }
+}
