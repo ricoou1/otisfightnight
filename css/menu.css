@@ -68,7 +68,7 @@
     color: rgb(172, 16, 16);
 }
 
-#menuLinks>p {
+#menuLinks>h1, #menuLinks>p {
     padding: 10px;
     box-sizing: border-box;
     font-size: 1.3rem;

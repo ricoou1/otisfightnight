@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Podrobnosti o konkrétním souboji – statistiky, fighteři a výsledky.">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <title>Otis Fight Night | Fighter</title>
-
+    <title>Otis Fight Night | Zápas</title>
     <link rel="icon" type="image/png" href="/images/OFN_ICON.png" sizes="96x96">
 
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/fighter.css">
+    <link rel="stylesheet" href="../../css/fight.css">
+    <link rel="stylesheet" href="../../css/fightcard.css">
     <link rel="stylesheet" href="../../css/menu.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
             <section class="burgerMenu">
                 <i class="fa-solid fa-bars"></i>
                 <article id="menuLinks">
-                    <p>Otis Fight Night</p>
+                    <h1>Otis Fight Night</h1>
                     <a href="../explore.html" class="menuLink"><i class="fa-solid fa-magnifying-glass"></i>Procházet</a>
                     <a href="../fighters.html" class="menuLink"><i class="fa-solid fa-hand-fist"></i>Fighteři</a>
                     <a href="../contact.html" class="menuLink"><i class="fa-solid fa-phone"></i>Kontakt</a>
@@ -45,89 +49,48 @@
             </section>
         </nav>
     </header>
+
     <main>
-        <article class="fighterDescription">
-            <section class="fighterTopRow">
-                <img src="../../images/boxer.png" class="descriptionFighterPhoto">
-                <section class="fighterDescriptionInfo">
-                    <p class="fighterName">Karel Novák</p>
-                    <p class="fighterNickname">Otis</p>
-                    <p class="fighterOtherInfo">180cm</p>
-                    <p class="fighterOtherInfo">69kg</p>
-                    <p class="fighterOtherInfo">19 let</p>
-                    <p class="fighterOtherInfo">K1</p>
-                    <p class="fighterStatusActive">Aktivní</p>
-                </section>
+        <section class="fightCard">
+            <p class="description">Fight Card</p>
+
+            <p class="fightStyle">K1 do 90 Kg</p>
+            <section class="fightDuo">
+                <a href="../../fighters/karel-novak.html" class="fighterLeft">
+                    <img src="../../images/boxer.png" class="fighterPhoto">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Karel Novák</p>
+                        <p class="fighterNickname">Mas</p>
+                    </article>
+                </a>
+                <section class="vsSymbol">VS</section>
+                <a href="../../fighters/jan-kral.html" class="fighterRight">
+                    <article class="fighterInFightcardInfo">
+                        <p class="fighterName">Jan Král</p>
+                        <p class="fighterNickname">Král</p>
+                    </article>
+                    <img src="../../images/boxer2.png" class="fighterPhoto">
+                </a>
             </section>
-            <div class="separateSectionsVertical"></div>
-            <section class="fighterDetails">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis perspiciatis
-                saepe in ipsum aliquid provident ratione necessitatibus odit sapiente corporis.
-            </section>
-        </article>
-        <div class="separateSections"></div>
-
-        <p class="description">Účast na OFN</p>
-
-        <article class="tableWrapper">
-            <table class="participations">
-                <thead>
-                    <tr>
-                        <th>Event</th>
-                        <th>Datum</th>
-                        <th>Soupeř</th>
-                        <th>Výsledek</th>
-                        <th>Metoda</th>
-                        <th>Styl</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>OFN 3</td>
-                        <td>2024-11-18</td>
-                        <td>Jan Novák</td>
-                        <td>Výhra</td>
-                        <td>KO (hlava)</td>
-                        <td>MMA</td>
-                    </tr>
-                    <tr>
-                        <td>OFN 4</td>
-                        <td>2023-09-02</td>
-                        <td>Petr Svoboda</td>
-                        <td>Prohra</td>
-                        <td>Submise (armbar)</td>
-                        <td>MMA</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-
-        <section class="fighterStats">
-            <p class="description">Statistika zápasů</p>
-            <table class="winsLosts">
-                <thead>
-                    <tr>
-                        <th>Zápasy</th>
-                        <th>Výhry</th>
-                        <th>Prohry</th>
-                        <th>Remízy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
+            <a href="../../zapasy/zapas1.html" class="fightLink">Zobrazit zápas</a>
         </section>
+
+        <section class="fightGallery">
+            <p class="description">Fotogalerie</p>
+            <div class="galleryScroll">
+                <img src="../../images/gallery1.jpg" alt="Zápas 1">
+                <img src="../../images/gallery2.jpg" alt="Zápas 2">
+                <img src="../../images/gallery3.jpg" alt="Zápas 3">
+                <img src="../../images/gallery4.jpg" alt="Zápas 4">
+            </div>
+        </section>
+
     </main>
+
     <footer>
         <article class="footer">
             <section class="footerSection">
-                <p class="footerTitle">Otis Fight Night s.r.o</p>
+                <h2 class="footerTitle">Otis Fight Night s.r.o</h2>
                 <section class="socials">
                     <a href="https://www.tiktok.com/@otisfightnight" target="_blank">TikTok</a>
                     <a href="https://www.instagram.com/otisfightnight/" target="_blank">Instagram</a>
@@ -137,7 +100,7 @@
 
             <section class="footerSection">
                 <p class="footerTitle">Kontakt</p>
-                <p>Email: </p>
+                <p>Email:</p>
                 <p>otisfightnight@gmail.com</p>
                 <p>Telefon:</p>
                 <p>+420 725 932 193</p>
@@ -164,8 +127,7 @@
         </article>
 
         <span class="footerBottom">
-            <p>2025 &copy; Otis Fight Night sro. Všechna práva vyhrazena. | Designed and developed by Richard Androsov
-            </p>
+            <p>2025 &copy; Otis Fight Night sro. Všechna práva vyhrazena. | Designed and developed by Richard Androsov</p>
         </span>
     </footer>
 
